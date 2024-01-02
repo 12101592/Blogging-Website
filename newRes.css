@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: none repeat scroll 0 0 transparent;
+    border: medium none;
+    border-spacing: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.nav-bar {
+    margin-top: 15px;
+    height: 42px;
+    margin-right: 5%;
+    margin-left: 5%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.Logo {
+    border-radius: 2px;
+    padding: 5px;
+}
+
+.LogoLink {
+    text-decoration: none;
+    color: #A014DD;
+}
+
+.text-decoration {
+    text-decoration: none;
+    margin-right: 8px;
+    color: #000;
+}
+
+.text-decoration:hover {
+    color: rgb(116, 131, 143);
+}
+
+.links {
+    color: aliceblue;
+    margin-left: 5%;
+    font-weight: 500;
+}
+
+.contactsUs {
+    padding: 5px;
+    border-radius: 3px;
+    background: none;
+    color: aliceblue;
+    background-color: #A014DD;
+}
+
+.contactsUs:hover {
+    background-color: #a35bc2;
+}
+
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.left,
+.Right {
+    flex: 1;
+    width: 100%;
+}
+
+.Image {
+    margin-top: 30px;
+    border: 2px solid black;
+    position: relative;
+    border-radius: 30px;
+    width: 100%;
+}
+
+.upperText {
+    color: rgb(50, 118, 255);
+    font-weight: 610;
+    font-size: small;
+}
+
+.headerLeft {
+    margin-top: 10px;
+}
+
+.Introduction {
+    margin-top: 30px;
+}
+
+h1 {
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+@keyframes blink-caret {
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: orange;
+    }
+}
+
+.buttonDiv {
+    margin-top: 30px;
+}
+
+.StartNow,
+.TakeTour {
+    padding: 10px;
+    border-radius: 3px;
+    color: aliceblue;
+    cursor: pointer;
+}
+
+.StartNow {
+    background-color: #A014DD;
+}
+
+.TakeTour {
+    margin-top: 10px;
+    background-color: black;
+    margin-left: 30px;
+}
+
+.NavBarLogo {
+    height: 25px;
+}
+
+.TopCompanies {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: medium;
+    margin-top: 25px;
+    color: white;
+}
+
+.companiesLogo {
+    background-color: rgba(139, 134, 134, 0.053);
+    height: 120px;
+    width: 100%;
+    margin: 0 5%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.googleLogo,
+.Netflix-Logo,
+.linkedin-Logo {
+    height: 80px;
+}
+
+.trustByTopCompanies {
+    background: -webkit-linear-gradient(#8336e1, #d753e1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Media Queries for responsive design */
+@media screen and (max-width: 768px) {
+    .nav-bar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .Logo,
+    .text-decoration,
+    .links,
+    .contactsUs {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .companiesLogo {
+        flex-direction: column;
+        margin: 0;
+    }
+}

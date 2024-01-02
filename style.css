@@ -1,0 +1,163 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: none repeat scroll 0 0 transparent;
+    border: medium none;
+    border-spacing: 0;
+    /* color: #26589F; */
+    
+    
+}
+
+body{
+    /* background-color: black; */
+    font-family: 'Poppins', sans-serif;
+}
+
+.nav-bar{
+    margin-top: 15px;
+    height: 42px;
+    margin-right: 100px;
+    margin-left: 100px;
+    /* background-color:aliceblue; */
+     display: flex;
+     justify-content: space-around;
+     align-items:center; 
+     position: relative;
+
+}
+
+.Logo{
+    /* background-color:aquamarine; */
+    /* border: 2px solid black; */
+    border-radius: 2px;
+    padding: 5px;
+
+}
+.LogoLink{
+    text-decoration: none;
+    color: #A014DD;
+}
+.text-decoration{
+    text-decoration: none;
+    margin-right: 8px;
+    color:
+}
+.links{
+    color:aliceblue;
+    margin-left: 60px;
+    font-weight: 500;
+}
+
+.contactsUs{
+    /* border: 2px solid /?black; */
+    padding: 5px;
+    border-radius: 3px;
+    background: none;
+    color: aliceblue;
+    background-color: #A014DD;
+}
+.contact-text{
+    text-decoration: none;
+    color:aliceblue;
+}
+
+.hero{
+    display: flex;
+margin-right: 100px;
+margin-left: 100px;
+/* background-color:rgb(44, 92, 135); */
+margin-top: 80px;
+height: 400px;
+justify-content: center;
+align-items:center;
+
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    /* background-color: aqua; */
+}
+.Right{
+
+    display: flex;
+    /* background-color:rgb(104, 34, 34); */
+    width: 50%;
+    /* background-color:aqua; */
+    align-items:center;
+    justify-content: center;
+}
+.Image{
+    margin-top: 30px;
+    border:2px solid black;
+    position: relative;
+    border-radius:30px;
+    /* height="370" width="400" */
+    height:370px ;
+    width: 400px;
+    /* margin-left: 100px; */
+    /* border: 2px solid rgb(15, 133, 175); */
+}
+.upperText{
+    color: rgb(50, 118, 255);
+    font-weight: 610;
+    font-size:small;
+}
+.headerLeft{
+    margin-top: 10px;
+}
+
+.Introduction{
+    margin-top: 30px;
+}
+.buttonDiv{
+    margin-top: 30px;
+}
+
+.StartNow{
+    background-color:#A014DD;
+    padding: 10px;
+    border-radius:3px;
+    color:aliceblue;
+    cursor: pointer;
+
+}
+.TakeTour{
+    padding: 10px;
+    border-radius:3px;
+    color:aliceblue;
+    margin-left: 30px;
+    background-color:black;
+    cursor: pointer;
+}
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    .nav-bar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .Logo,
+    .text-decoration,
+    .links,
+    .contactsUs {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .left,
+    .Right {
+        width: 100%;
+    }
+}
